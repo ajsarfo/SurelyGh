@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="news_categories">
+        <item>Latest</item>
+        <item>Politics</item>
+        <item>Entertainment</item>
+        <item>Sports</item>
+        <item>Arts &amp; Culture</item>
+    </string-array>
+</resources>

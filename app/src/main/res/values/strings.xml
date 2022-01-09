@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SurelyGh</string>
+    <string name="lorem_text">lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugit laborum magni, nobis temporibus ut? Natus rem sit soluta. Delectus distinctio magni modi neque omnis quo quos repellat soluta ut!</string>
+
+    <string name="lorem_title">Lorem ipsum dolor sit amet, consectetur elit. Eaque enim reprehenderit aepe</string>
+    <string name="lorem_slug">Eaque enim explicabo nobis reprehenderit aepe</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/post_item_height"
+    android:layout_marginTop="@dimen/post_item_margin_top"
+    android:background="@color/white"
+    app:cardElevation="0dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:padding="@dimen/post_item_padding"
+       android:weightSum="3"
+       >
+
+       <androidx.appcompat.widget.AppCompatImageView
+           android:id="@+id/heading_image"
+           android:layout_width="0dp"
+           android:layout_height="@dimen/post_item_image_height"
+           android:background="@color/post_image_background"
+           android:layout_weight="0.92"
+           tools:srcCompat="@drawable/ic_logo"
+           android:scaleType="centerCrop"/>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="2"
+           android:orientation="vertical"
+           android:layout_marginStart="@dimen/post_item_separator"
+           android:layout_marginLeft="@dimen/post_item_separator">
+
+           <TextView
+               android:id="@+id/heading_title"
+               style="@style/PostItemStyle"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               tools:text="@string/lorem_text" />
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/constraintLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/heading_title">
+
+               <TextView
+                   android:id="@+id/date"
+                   style="@style/PostBottomItemStyle"
+                   android:layout_width="wrap_content"
+                   android:layout_height="0dp"
+                   android:gravity="center_vertical"
+                   android:textColor="@color/color_post_item_bottom_icon_color"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   tools:text="30 Dec, 11:10pm" />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/bookmark"
+                   android:layout_width="@dimen/post_item_bottom_bookmark_icon_size"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:srcCompat="@drawable/ic_un_bookmark" />
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
